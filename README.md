@@ -1,1 +1,2 @@
-# GPIO
+<h1>Generic Pilot for the GPIO of the STM32F4 microcontroller</h1>
+This is a generic pilot for the general purpose input output peripheral GPIO in the STM32F405 microcontroller. The "interface" is in the main.c file, where the specific GPIO can be selected, it's resetm the mode of the GPIO (MODER, OTYPER, IDR or ODR) can be chosen. The gpio.c file contains the different functions are coded: activating the desired clock, a reset function, a function for setting the mode of the GPIO and the different modes of output, one for reading the value of a single pin or the hole port and finally a function for changing the value of a single pin or the hole port. The gpio.h file contains all the different defines (pin numbers, gpio adresses...) , and an assert macro.
